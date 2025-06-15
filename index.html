@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="/favicon.ico" />
   <title>Braille Auto-Correct</title>
 </head>
 
@@ -15,9 +16,10 @@
     <p>
 
       You can enter <strong>single keys</strong> (e.g., <code>D, W, Q, K, O, P</code>) or <strong>key
-        combinations</strong> (e.g., <code>D+K</code>) (e.g., <code>D+W</code>) (e.g., <code>Q+K</code>) (e.g., <code>K+P</code>)</p>
+        combinations</strong> (e.g., <code>D+K</code>) (e.g., <code>D+W</code>) (e.g., <code>Q+K</code>) (e.g.,
+      <code>K+P</code>)</p>
   </div>
-  
+
   <div id="validationMsg" class="validation-message"></div>
 
   <div>
@@ -25,7 +27,7 @@
     <textarea id="input" rows="3" placeholder="Enter braille key combos here..."></textarea>
     <button onclick="processBraille()">Convert & Suggest</button>
   </div>
-<div id="dotOutput"></div>
+  <div id="dotOutput"></div>
 
   <div style="margin-top: 2rem;">
     <h3>Output</h3>
@@ -33,7 +35,12 @@
   </div>
 
   <script src="script.js" type="module">
-
+    fetch('/sampleDict.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Loaded JSON:', data);
+      })
+      .catch(error => console.error('Error loading JSON:', error));
   </script>
 </body>
 
