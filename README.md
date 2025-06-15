@@ -46,9 +46,9 @@ npm install
 npm run dev
 
 Then, open http://localhost:5178 in your browser.
+Deployed Application URL: braille-autocorrect-c5bm.vercel.app.
 
 You can start editing the app by modifying script.js. The page auto-updates as you make changes.
 
 ## Deploy on Vercel
-Deployed Application URL: braille-autocorrect-c5bm.vercel.app .
 The easiest way to deploy your React app is using the Vercel Platform. It integrates well with Vite-based projects and supports automatic CI/CD from GitHub.
