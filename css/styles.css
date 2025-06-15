@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+
+p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+
+textarea,
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.output {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-top: 1rem;
+  height: 7em;               /* fixed height for ~2 lines */
+  line-height: 1.5em;
+  font-size: 1rem;
+  white-space: nowrap;       /* force single line unless wrapped */
+  overflow: hidden;          /* hide overflow content */
+  text-overflow: ellipsis;   /* optional: show "..." */
+  box-sizing: border-box;
+}
+
+
+.suggestions-box {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-top: 1rem;
+}
+
+.suggestion-item {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.suggestion-item:hover {
+  background: #f3f4f6;
+}
+
+.validation-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fee2e2; /* light red background */
+  color: #b91c1c;       /* dark red text */
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  z-index: 1000;
+  display: none; /* initially hidden */
+}
